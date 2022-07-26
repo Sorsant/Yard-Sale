@@ -31,6 +31,12 @@ body{
     width: 300px;
     justify-items: center;
 }
+.form-container1{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    justify-items: center;
+}
 
 .logo {
     width: 150px;
@@ -42,6 +48,11 @@ body{
     font-size: var(--lg);
     margin-bottom: 12px;
     text-align: center;
+}
+.title-1{
+    font-size: var(--lg);
+    text-align: start;
+    margin-bottom: 30px;
 }
 .subtitle{
     color: var(--very-light-pink);
@@ -76,8 +87,19 @@ body{
     text-decoration: none;    
 }
 .form {
+ display: flex;
+ flex-direction: column;
+}
+.form1 div{
     display: flex;
     flex-direction: column;
+}
+.form a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
 }
 .label{
     font-size: var(--sm);
@@ -93,6 +115,15 @@ body{
     padding: 6px;
     margin-bottom: 12px;
 }
+.input-name{
+    margin-bottom: 22px
+}
+.input-password{
+    margin-bottom: 22px
+}
+.input-email{
+    margin-bottom: 22px;
+}
 .primary-button{
     background-color: var(--hospital-green);
     border-radius: 8px;
@@ -104,9 +135,25 @@ body{
     font-weight: bold;
     height: 50px;
 }
+.secondary-button{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+
+}
 .login-button{
     margin-top: 14px;
     margin-bottom: 30px;
+}
+.login-button2{
+    margin-top: 200px;
+
 }
 
 /* -------------------------------------------- */
@@ -114,4 +161,12 @@ body{
 .logo{
     display: block;
 }        
+.secondary-button{
+  margin-top: 200px;
+}
+.login-button2{
+    margin-top: 14px;
+
+}
+
 }
