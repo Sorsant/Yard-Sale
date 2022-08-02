@@ -23,12 +23,14 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+
     
 }
 .form-container1{
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
+    justify-items: center;
 }
 
 
@@ -76,7 +78,7 @@ body{
 .resend span{
    color: var(--very-light-pink);
 }
-   .resend a {
+.resend a {
     color: var(--hospital-green);
     text-decoration: none;    
 }
