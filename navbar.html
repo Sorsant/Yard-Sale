@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+ 
     <title>Yard Sale</title>
    <style>
     :root {
@@ -24,10 +24,85 @@ body {
       margin: 0;
       font-family: 'Quicksand', sans-serif;
     }
+ nav{box-sizing: border-box;
+	  overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 24px;border-bottom: 1px solid var(--very-light-pink);
+    }
+    .menu{
+      display:none;
+    }
+    .logo{
+      width: 100px;
+    }
+    .navbar-right ul, .navbar-left ul{
+      list-style: none;
+      padding: 0;
+      margin:0;
+      display: flex;
+      align-items: center;
+      height: 60px;
+    }
+    .navbar-left{
+      display: flex;   
+    }
+    .navbar-left ul{    
+      margin-left: 12px;
+    }
+
+    .navbar-left ul li a , .navbar-right ul li a{
+      text-decoration: none;
+      color: var(--very-light-pink);
+      border: 1px solid var(--white);
+      padding: 8px;
+      border-radius: 8px;
+      
+    }
+    .navbar-left ul li a:hover , .navbar-right ul li a:hover{
+      border: 1px solid var(--hospital-green);
+      color: var(--hospital-green);
+     
+
+    }
+    .navbar-email{
+      color: var(--very-light-pink);
+      font-size: var(--sm);
+      margin-right: 12px;
+    }
+    .navbar-shopping-cart{
+      position: relative;
+    }
+   .navbar-shopping-cart div{
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+   }   
+   @media (max-width: 640px) {
+      .menu {
+        display: block;
+      }
+      .navbar-left ul {
+        display: none;
+      }
+      .navbar-email {
+        display: none;
+      }
+    }
    </style>
 </head>
 <body>
-    <nav><img src="./icons/icon_menu.svg" alt="">
+    <nav><img src="./icons/icon_menu.svg" alt="" class="menu">
       <div class="navbar-left">
 <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
 <ul>
@@ -52,14 +127,15 @@ body {
 </ul>
       </div>
       <div class="navbar-right">
-        <li>
+        <ul><li class="navbar-email">
           lautaa26@gmail.com
         </li>
         <li class="navbar-shopping-cart"> <img src="./icons/icon_shopping_cart.svg" alt="">
         <div>
-          2
+          10
         </div>
       </li>
+    </ul>
       </div>
     </nav>
 </body>
